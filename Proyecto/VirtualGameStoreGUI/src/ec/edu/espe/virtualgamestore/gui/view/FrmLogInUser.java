@@ -61,6 +61,7 @@ public class FrmLogInUser extends javax.swing.JFrame {
         sptRegister = new javax.swing.JSeparator();
         btnExit = new javax.swing.JButton();
         btnMinimize = new javax.swing.JButton();
+        btnReturn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -74,17 +75,17 @@ public class FrmLogInUser extends javax.swing.JFrame {
         userTxt.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
         userTxt.setForeground(new java.awt.Color(255, 255, 255));
         userTxt.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/virtualgamestore/pictures/UserIcon.png"))); // NOI18N
-        userTxt.setText("USER");
+        userTxt.setText("Nombre de Usuario");
 
         registerLbl.setBackground(new java.awt.Color(115, 0, 113));
         registerLbl.setFont(new java.awt.Font("Comic Sans MS", 1, 48)); // NOI18N
         registerLbl.setForeground(new java.awt.Color(82, 59, 128));
-        registerLbl.setText("Log In");
+        registerLbl.setText("Bienvenido");
 
         passwordTxt.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
         passwordTxt.setForeground(new java.awt.Color(255, 255, 255));
         passwordTxt.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/virtualgamestore/pictures/passwordIcon.png"))); // NOI18N
-        passwordTxt.setText("PASSWORD");
+        passwordTxt.setText("Contraseña");
 
         txtUser.setBackground(new java.awt.Color(0, 0, 0));
         txtUser.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
@@ -205,6 +206,18 @@ public class FrmLogInUser extends javax.swing.JFrame {
             }
         });
 
+        btnReturn.setBackground(new java.awt.Color(0, 0, 0));
+        btnReturn.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
+        btnReturn.setForeground(new java.awt.Color(153, 51, 255));
+        btnReturn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/virtualgamestore/pictures/regresar.png"))); // NOI18N
+        btnReturn.setText("Volver");
+        btnReturn.setBorderPainted(false);
+        btnReturn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnReturnActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout pnlRegisteUserLayout = new javax.swing.GroupLayout(pnlRegisteUser);
         pnlRegisteUser.setLayout(pnlRegisteUserLayout);
         pnlRegisteUserLayout.setHorizontalGroup(
@@ -248,8 +261,11 @@ public class FrmLogInUser extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btnExit))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlRegisteUserLayout.createSequentialGroup()
-                        .addComponent(registerLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(122, 122, 122))))
+                        .addComponent(registerLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(85, 85, 85))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlRegisteUserLayout.createSequentialGroup()
+                        .addComponent(btnReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(136, 136, 136))))
         );
         pnlRegisteUserLayout.setVerticalGroup(
             pnlRegisteUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -258,9 +274,9 @@ public class FrmLogInUser extends javax.swing.JFrame {
                 .addGroup(pnlRegisteUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnExit)
                     .addComponent(btnMinimize))
-                .addGap(29, 29, 29)
+                .addGap(18, 18, 18)
                 .addComponent(registerLbl)
-                .addGap(52, 52, 52)
+                .addGap(63, 63, 63)
                 .addComponent(userTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(pnlRegisteUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnlRegisteUserLayout.createSequentialGroup()
@@ -281,7 +297,9 @@ public class FrmLogInUser extends javax.swing.JFrame {
                     .addComponent(RegisterBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(sptRegister, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(123, 123, 123))
+                .addGap(37, 37, 37)
+                .addComponent(btnReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(38, 38, 38))
         );
 
         javax.swing.GroupLayout pnlPrincipalLayout = new javax.swing.GroupLayout(pnlPrincipal);
@@ -387,6 +405,11 @@ public class FrmLogInUser extends javax.swing.JFrame {
         this.setExtendedState(JFrame.ICONIFIED);
     }//GEN-LAST:event_btnMinimizeActionPerformed
 
+    private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturnActionPerformed
+        new FrmUserType().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnReturnActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -490,6 +513,7 @@ public class FrmLogInUser extends javax.swing.JFrame {
     private javax.swing.JButton RegisterBTN;
     private javax.swing.JButton btnExit;
     private javax.swing.JButton btnMinimize;
+    private javax.swing.JButton btnReturn;
     private javax.swing.JLabel lblLogoImage;
     private javax.swing.JPanel logInPanel;
     private javax.swing.JLabel passwordTxt;
