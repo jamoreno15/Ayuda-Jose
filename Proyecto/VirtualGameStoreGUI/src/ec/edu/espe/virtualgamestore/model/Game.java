@@ -13,7 +13,7 @@ public class Game extends Accessory {
 
     private int pegi;
 
-    public Game(String id, String name, double price, String color, int pegi, int quantity) {
+    public Game(int id, String name, float price, String color, int pegi, int quantity) {
         super(id, name, price, color, quantity);
         this.pegi = pegi;
     }

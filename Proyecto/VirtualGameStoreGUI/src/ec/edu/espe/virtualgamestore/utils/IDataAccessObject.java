@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Darian M. Martinez ESPE DCCO
+ * @author JavaMasters
  */
 public interface IDataAccessObject {
     

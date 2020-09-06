@@ -7,10 +7,10 @@ package ec.edu.espe.virtualgamestore.gui.view;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import ec.edu.espe.virtualgamestore.controller.Inventory;
 import ec.edu.espe.virtualgamestore.model.Color;
 import ec.edu.espe.virtualgamestore.model.Game;
 import java.awt.event.KeyEvent;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -105,7 +105,7 @@ public class FrmGameAdmin extends javax.swing.JFrame {
         comboBoxColor = new javax.swing.JComboBox<>();
         jLabel7 = new javax.swing.JLabel();
         spinnerQuantity = new javax.swing.JSpinner();
-        jButton1 = new javax.swing.JButton();
+        btnAdd = new javax.swing.JButton();
         btnErase = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
@@ -178,16 +178,21 @@ public class FrmGameAdmin extends javax.swing.JFrame {
         jLabel7.setForeground(new java.awt.Color(102, 0, 102));
         jLabel7.setText("Cantidad:");
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/virtualgamestore/pictures/ADD.png"))); // NOI18N
-        jButton1.setText("Agregar Producto");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnAdd.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/virtualgamestore/pictures/ADD.png"))); // NOI18N
+        btnAdd.setText("Agregar Producto");
+        btnAdd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnAddActionPerformed(evt);
             }
         });
 
         btnErase.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/virtualgamestore/pictures/Erase.png"))); // NOI18N
         btnErase.setText("Borrar");
+        btnErase.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEraseActionPerformed(evt);
+            }
+        });
 
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/virtualgamestore/pictures/ver almacer.png"))); // NOI18N
         jButton3.setText("Mostrar Inventario");
@@ -209,7 +214,7 @@ public class FrmGameAdmin extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton1)
+                        .addComponent(btnAdd)
                         .addGap(112, 112, 112)
                         .addComponent(btnErase))
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -275,7 +280,7 @@ public class FrmGameAdmin extends javax.swing.JFrame {
                     .addComponent(spinnerQuantity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(50, 50, 50)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
+                    .addComponent(btnAdd)
                     .addComponent(btnErase))
                 .addContainerGap(53, Short.MAX_VALUE))
         );
@@ -321,46 +326,57 @@ public class FrmGameAdmin extends javax.swing.JFrame {
     }//GEN-LAST:event_txtIdKeyTyped
 
     private void txtPegiKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtPegiKeyTyped
-    char c = evt.getKeyChar();
-        if((c<'a' || c>'z') && (c<'A') | c>'Z' && (c<'Ñ') && c !=KeyEvent.VK_SPACE)  evt.consume();
+        char c = evt.getKeyChar();
+        if (c < '0' || c > '9') {
+            evt.consume();
+        }
     }//GEN-LAST:event_txtPegiKeyTyped
 
     private void txtNameKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNameKeyTyped
-       char c = evt.getKeyChar();
-        if((c<'a' || c>'z') && (c<'A') | c>'Z' && (c<'Ñ') && c !=KeyEvent.VK_SPACE)  evt.consume();
+        char c = evt.getKeyChar();
+        if ((c < 'a' || c > 'z') && (c < 'A') | c > 'Z' && (c < 'Ñ') && c != KeyEvent.VK_SPACE) {
+            evt.consume();
+        }
     }//GEN-LAST:event_txtNameKeyTyped
 
     private void txtPriceKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtPriceKeyTyped
         char c = evt.getKeyChar();
-        if((c<'a' || c>'z') && (c<'A') | c>'Z' && (c<'Ñ') && c !=KeyEvent.VK_SPACE)  evt.consume();
+        if (c < '0' || c > '9') {
+            evt.consume();
+        }
     }//GEN-LAST:event_txtPriceKeyTyped
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-       
+    private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
+
         Inventory inventory = new Inventory();
         inventory.addProduct(Integer.valueOf(txtId.getText()),
-                (Integer.valueOf(txtSize.getText())),
-                (txtBrand.getText()),
-                (cmbColor.getSelectedItem().toString()),
+                (Integer.valueOf(txtPegi.getText())),
+                (txtName.getText()),
+                (comboBoxColor.getSelectedItem().toString()),
                 (Float.valueOf(txtPrice.getText())),
-                (cmbType.getSelectedItem().toString()),
-                (Integer)spnStock.getValue());
-        
-        System.out.println((Integer.valueOf(txtId.getText())+
-                (Integer.valueOf(txtSize.getText()))+
-                (txtBrand.getText())+
-                (cmbColor.getSelectedItem().toString())+
-                (Float.valueOf(txtPrice.getText()))+
-                (cmbType.getSelectedItem().toString())+
-                (Integer)spnStock.getValue()));
-        JOptionPane.showMessageDialog(this,"The product are saved...");
+                (Integer) spinnerQuantity.getValue());
+
+        System.out.println((Integer.valueOf(txtId.getText())
+                + (Integer.valueOf(txtPegi.getText()))
+                + (txtName.getText())
+                + (comboBoxColor.getSelectedItem().toString())
+                + (Float.valueOf(txtPrice.getText()))
+                + (Integer) spinnerQuantity.getValue()));
+        JOptionPane.showMessageDialog(this, "El producto fue añadido");
         txtId.setText("");
-        txtBrand.setText("");
+        txtName.setText("");
         txtPrice.setText("");
-        txtSize.setText("");
-        cmbType.setSelectedItem("");
-        cmbColor.setSelectedItem("");
-    }//GEN-LAST:event_jButton1ActionPerformed
+        txtPegi.setText("");
+        comboBoxColor.setSelectedItem("");
+    }//GEN-LAST:event_btnAddActionPerformed
+
+    private void btnEraseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEraseActionPerformed
+        txtId.setText("");
+        txtName.setText("");
+        txtPrice.setText("");
+        txtPegi.setText("");
+        comboBoxColor.setSelectedItem("");
+    }//GEN-LAST:event_btnEraseActionPerformed
 
     /**
      * @param args the command line arguments
@@ -398,9 +414,9 @@ public class FrmGameAdmin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAdd;
     private javax.swing.JButton btnErase;
     private javax.swing.JComboBox<String> comboBoxColor;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;

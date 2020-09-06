@@ -1,150 +1,121 @@
-
 package ec.edu.espe.virtualgamestore.controller;
 
 import com.google.gson.Gson;
-import ec.edu.espe.pim.model.PairOfShoes;
-import ec.edu.espe.pim.utils.IDataAccessObject;
-import ec.edu.espe.pim.utils.JsonFileAdministrator;
-import ec.edu.espe.pim.utils.MongoDBManager;
+
+import ec.edu.espe.virtualgamestore.utils.IDataAccessObject;
+import ec.edu.espe.virtualgamestore.utils.JsonFileAdministrator;
+import ec.edu.espe.virtualgamestore.utils.MongoDBManager;
+import ec.edu.espe.virtualgamestore.model.Game;
+import ec.edu.espe.virtualgamestore.utils.FileUsers;
 import java.util.ArrayList;
 import java.util.Scanner;
 import javax.swing.JComboBox;
 import javax.swing.JSpinner;
 import javax.swing.JTextField;
 
-
 public class Inventory {
-    
-    /*public void addProduct(){
-        Shoes shoes = new Shoes();
-        JsonFileAdministrator jsonFile = new JsonFileAdministrator();
-        Scanner in = new Scanner(System.in);
-         
-        System.out.print(" Input the ID : ");
-        shoes.setId(in.nextInt());        
-        System.out.print(" Input the Size: ");
-        shoes.setSize(in.nextInt());
-        in.nextLine();
-        System.out.print(" Input the Color: ");
-        shoes.setColor(in.nextLine());
-        System.out.print(" Input the Brand: ");
-        shoes.setBrand(in.nextLine());        
-        System.out.print(" Input the Price: ");
-        shoes.setPrice(in.nextFloat()); 
-        in.nextLine();
-        System.out.print(" Input the Shoes type: ");
-        shoes.setShoeType(in.nextLine());
-        System.out.print(" Input the ShoeFor: ");
-        shoes.setShoefor(in.nextLine());
-        
-        jsonFile.addToFile(shoes);
-        
-    }*/
-    
+
     public void addProduct(
-            int ID, int size,String brand,
-            String color,float price,String shoeType,
-            int stock){
-        PairOfShoes shoes = new PairOfShoes(ID,size,color,brand,price,shoeType,stock);
-        System.out.println(shoes.toString());
-        //JsonFileAdministrator jsonFile = new JsonFileAdministrator();
+            int id, String name, float price,
+            String color, int quantity, int pegi
+    ) {
+        Game game = new Game(id, name, price, color, quantity, pegi);
+
+        System.out.println(game.toString());
+
         IDataAccessObject dataAccessObject = new MongoDBManager();
-        
-        dataAccessObject.addToFile(shoes);
-        
-        
+        dataAccessObject.addToFile(game);
+   
     }
-    
-    public void update(ArrayList<PairOfShoes> inventory ){
-        
+
+    public void update(ArrayList<Game> inventory) {
+
         JsonFileAdministrator jsonFile = new JsonFileAdministrator();
-        
-        jsonFile.eraseJson(PairOfShoes.class.getSimpleName());
-        
-        inventory.forEach((shoes) -> {
-            jsonFile.addToFile(shoes);
+
+        jsonFile.eraseJson(Game.class.getSimpleName());
+
+        inventory.forEach((games) -> {
+            jsonFile.addToFile(games);
         });
-        
-        
-    } 
-          
-    public void deleteProduct(ArrayList<PairOfShoes> listOfShoes,int id){
-        
-        for (int i = 0; i < listOfShoes.size() ; i++) {
-            
-            if((listOfShoes.get(i).getId())== id){
-                listOfShoes.remove(i);
-            }
-            
-        }
-        
-        update(listOfShoes);
-        
+
     }
-    
-    public void discount(ArrayList<PairOfShoes> listOfShoes,int id,int quanty){
+
+    public void deleteProduct(ArrayList<Game> listOfGames, int id) {
+
+        for (int i = 0; i < listOfGames.size(); i++) {
+
+            if ((listOfGames.get(i).getId()) == id) {
+                listOfGames.remove(i);
+            }
+
+        }
+
+        update(listOfGames);
+
+    }
+
+    public void discount(ArrayList<Game> listOfGame, int id, int quantity) {
         int newStock;
-        for (int i = 0; i < listOfShoes.size() ; i++) {
-            
-            if((listOfShoes.get(i).getId())== id){
-                newStock = listOfShoes.get(i).getStock() - quanty;
-                listOfShoes.get(i).setStock(newStock);
+        for (int i = 0; i < listOfGame.size(); i++) {
+
+            if ((listOfGame.get(i).getId()) == id) {
+                newStock = listOfGame.get(i).getQuantity() - quantity;
+                listOfGame.get(i).setQuantity(newStock);
             }
-            
+
         }
-        
-        update(listOfShoes);
-        
+
+        update(listOfGame);
+
     }
-    
-    public void showProducts(){
-        
+
+    public void showProducts() {
+
         ArrayList<Object> object = new ArrayList<>();
-        ArrayList<PairOfShoes> inventory = new ArrayList<>();
+        ArrayList<Game> inventory = new ArrayList<>();
         /*JsonFileAdministrator jsonFile = new JsonFileAdministrator();        
         Gson gson = new Gson();*/
         IDataAccessObject dataAccessObject = new MongoDBManager();
-        
-        object = dataAccessObject.readObjects("PairOfShoes");
-        
+
+        object = dataAccessObject.readObjects("Games");
+
         for (Object obj : object) {
-            inventory.add((PairOfShoes)obj);
+            inventory.add((Game) obj);
         }
-        
+
         /*for (Object obj : object) {
             PairOfShoes shoes;
             String shoe = gson.toJson(obj);
             shoes = gson.fromJson(shoe, PairOfShoes.class);
             inventory.add(shoes);
         }*/
-                      
-        /*inventory.forEach((shoe)->{
+ /*inventory.forEach((shoe)->{
             System.out.print  ("---------------------------");
             System.out.println(shoe.toString());
             System.out.println("---------------------------");
         });*/
-           
-    } 
-    public  ArrayList<PairOfShoes> showProduct(){
+    }
+
+    public ArrayList<Game> showProduct() {
         ArrayList<Object> objects = new ArrayList<>();
-        ArrayList<PairOfShoes> inventory = new ArrayList<>();
+        ArrayList<Game> inventory = new ArrayList<>();
         /*JsonFileAdministrator jsonFile = new JsonFileAdministrator();        
         Gson gson = new Gson();*/
         IDataAccessObject dataAccessObject = new MongoDBManager();
-      
-        objects = dataAccessObject.readObjects("PairOfShoes");
-        
+
+        objects = dataAccessObject.readObjects("Games");
+
         for (Object obj : objects) {
-            inventory.add((PairOfShoes)obj);
+            inventory.add((Game) obj);
         }
-        
-                      
+
         /*inventory.forEach((shoe)->{
             System.out.print  ("---------------------------");
             System.out.println(shoe.toString());
             System.out.println("---------------------------");
         });*/
         return inventory;
-           
-    }    
+
+    }
+
 }
