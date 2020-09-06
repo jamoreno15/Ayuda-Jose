@@ -1,0 +1,302 @@
+[
+  {
+    "id": "11",
+    "name": "Control",
+    "price": 40.99,
+    "color": "Black"
+  },
+  {
+    "id": "12",
+    "name": "Headphones",
+    "price": 30.99,
+    "color": "White"
+  },
+  {
+    "id": "13",
+    "name": "Microphone",
+    "price": 50.99,
+    "color": "White"
+  },
+  {
+    "id": "14",
+    "name": "PlayStation Move",
+    "price": 10.99,
+    "color": "Black"
+  },
+  {
+    "id": "15",
+    "name": "PlayStation Camera",
+    "price": 20.99,
+    "color": "Black"
+  },
+  {
+    "id": "16",
+    "name": "VR Headset",
+    "price": 8.99,
+    "color": "White"
+  },
+  {
+    "id": "17",
+    "name": "DualShock Charging Station",
+    "price": 12.99,
+    "color": "White"
+  },
+  {
+    "id": "18",
+    "name": "USB Wireless Adaptor",
+    "price": 10.99,
+    "color": "White"
+  },
+  {
+    "id": "19",
+    "name": "Microsoft Media Remote",
+    "price": 13.99,
+    "color": "White"
+  },
+  {
+    "id": "20",
+    "name": "Charger",
+    "price": 9.99,
+    "color": "Black"
+  },
+  {
+    "id": "21",
+    "name": "XBOX JoysStick",
+    "price": 5.30,
+    "color": "Black"
+  },
+  {
+    "id": "22",
+    "name": "PS4 Support",
+    "price": 12.30,
+    "color": "Black"
+  },
+  {
+    "id": "23",
+    "name": "Xbox Support",
+    "price": 13.00,
+    "color": "White"
+  },
+  {
+    "id": "24",
+    "name": "Nintendo Support",
+    "price": 14.00,
+    "color": "Red"
+  },
+  {
+    "id": "25",
+    "name": "Case for PS4 Games",
+    "price": 9.00,
+    "color": "Gold"
+  },
+  {
+    "id": "26",
+    "name": "Case for Xbox Games",
+    "price": 8.00,
+    "color": "Gold"
+  },
+  {
+    "id": "27",
+    "name": "Case for Nintendo Games",
+    "price": 10.00,
+    "color": "Gold"
+  },
+  {
+    "id": "28",
+    "name": "Xbox controller charging base",
+    "price": 15.00,
+    "color": "Black"
+  },
+  {
+    "id": "29",
+    "name": "PS4 Controller Charging Base",
+    "price": 13.00,
+    "color": "White"
+  },
+  {
+    "id": "30",
+    "name": "Nintendo Controller Charging Base",
+    "price": 11.00,
+    "color": "Blue"
+  },
+  {
+    "id": "31",
+    "name": "Case for PS4",
+    "price": 6.00,
+    "color": "Green and Black"
+  },
+  {
+    "id": "32",
+    "name": "Case for XBOX",
+    "price": 6.99,
+    "color": "Green"
+  },
+  {
+    "id": "33",
+    "name": "Case for Nintendo",
+    "price": 6.00,
+    "color": "Blue"
+  },
+  {
+    "id": "34",
+    "name": "USB 8Bits",
+    "price": 6.00,
+    "color": "MultiColor"
+  },
+  {
+    "id": "35",
+    "name": "USB Batman",
+    "price": 7.00,
+    "color": "Black and Yellow"
+  },
+  {
+    "id": "36",
+    "name": "JoyStick XBOX One",
+    "price": 4.00,
+    "color": "Green"
+  },
+  {
+    "id": "37",
+    "name": "JoyStick Nintendo Switch",
+    "price": 7.50,
+    "color": "Blue and Red"
+  },
+  {
+    "id": "38",
+    "name": "USB Spiderman",
+    "price": 4.00,
+    "color": "Red and White"
+  },
+  {
+    "id": "39",
+    "name": "USB Superman",
+    "price": 7.60,
+    "color": "Blue and Red"
+  },
+  {
+    "id": "40",
+    "name": "JoyStick Gold PS4",
+    "price": 12.70,
+    "color": "Gold"
+  },
+  {
+    "id": "41",
+    "name": "Case for Xiamoi",
+    "price": 8.00,
+    "color": "Green and Black"
+  },
+  {
+    "id": "42",
+    "name": "Case for Smasung Note 3",
+    "price": 12.00,
+    "color": "Black"
+  },
+  {
+    "id": "43",
+    "name": "Case for Iphone X",
+    "price": 15.00,
+    "color": "Gold"
+  },
+  {
+    "id": "44",
+    "name": "Case for Iphone XS",
+    "price": 17.00,
+    "color": "Gold"
+  },
+  {
+    "id": "45",
+    "name": "Case for Samsung Galaxy S9",
+    "price": 10.50,
+    "color": "Black"
+  },
+  {
+    "id": "46",
+    "name": "USB Edition Galaxy",
+    "price": 5.00,
+    "color": "Black"
+  },
+  {
+    "id": "47",
+    "name": "Buttons for PS4",
+    "price": 8.99,
+    "color": "Black And White"
+  },
+  {
+    "id": "48",
+    "name": "Buttons for XBOX One",
+    "price": 9.00,
+    "color": "Gold and Black"
+  },
+  {
+    "id": "49",
+    "name": "Buttons for Nintendo Switch",
+    "price": 8.50,
+    "color": "Red And Blue"
+  },
+  {
+    "id": "50",
+    "name": "Buttons for PS3",
+    "price": 4.50,
+    "color": "Red and Green"
+  },
+  {
+    "id": "51",
+    "name": "Support for PS3",
+    "price": 8.00,
+    "color": "Black"
+  },
+  {
+    "id": "52",
+    "name": "Support for XBOX 360",
+    "price": 7.50,
+    "color": "White"
+  },
+  {
+    "id": "53",
+    "name": "Support for WIIU",
+    "price": 9.50,
+    "color": "Black"
+  },
+  {
+    "id": "54",
+    "name": "USB Contra Edition",
+    "price": 5.00,
+    "color": "Multicolor"
+  },
+  {
+    "id": "55",
+    "name": "USB Avengers Edition",
+    "price": 8.00,
+    "color": "Multicolor"
+  },
+  {
+    "id": "56",
+    "name": "PS4 controller strap",
+    "price": 4.50,
+    "color": "Green and Black"
+  },
+  {
+    "id": "57",
+    "name": "XBOX One controller strap",
+    "price": 6.50,
+    "color": "Black"
+  },
+  {
+    "id": "58",
+    "name": "Nintendo controller strap",
+    "price": 7.00,
+    "color": "Black"
+  },
+  {
+    "id": "59",
+    "name": "PS3 controller strap",
+    "price": 4.00,
+    "color": "Green and Black"
+  },
+  {
+    "id": "60",
+    "name": "XBOX 360 controller strap",
+    "price": 5.00,
+    "color": "White"
+  }
+]

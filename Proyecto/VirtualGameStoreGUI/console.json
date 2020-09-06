@@ -1,0 +1,301 @@
+[{
+		"id": "50",
+		"name": "PS1",
+		"price": 60.0,
+		"edition": "Classic"
+	},
+	{
+		"id": "49",
+		"name": "PS1",
+		"price": 65.98,
+		"edition": "Original"
+	},
+	{
+		"id": "48",
+		"name": "PS1",
+		"price": 100.0,
+		"edition": "Video CD"
+	},
+	{
+		"id": "47",
+		"name": "PS1",
+		"price": 80.99,
+		"edition": "Net Yaroze"
+	},
+	{
+		"id": "46",
+		"name": "PS1",
+		"price": 70.0,
+		"edition": "ONE"
+	},
+	{
+		"id": "45",
+		"name": "Game Boy",
+		"price": 60.0,
+		"edition": "Pocket"
+	},
+	{
+		"id": "44",
+		"name": "Game Boy",
+		"price": 70.0,
+		"edition": "Light"
+	},
+	{
+		"id": "43",
+		"name": "Game Boy",
+		"price": 50.0,
+		"edition": "Color"
+	},
+	{
+		"id": "42",
+		"name": "Game Boy",
+		"price": 80.0,
+		"edition": "Advance"
+	},
+	{
+		"id": "41",
+		"name": "Game Boy",
+		"price": 60.0,
+		"edition": "Advance SP"
+	},
+	{
+		"id": "40",
+		"name": "PS Vita",
+		"price": 200.0,
+		"edition": "Classic"
+	},
+	{
+		"id": "39",
+		"name": "PS Vita",
+		"price": 170.98,
+		"edition": "SLIM"
+	},
+	{
+		"id": "38",
+		"name": "Nintendo Game Cube",
+		"price": 120.0,
+		"edition": "Indigo"
+	},
+	{
+		"id": "37",
+		"name": "Nintendo Game Cube",
+		"price": 125.99,
+		"edition": "Black"
+	},
+	{
+		"id": "36",
+		"name": "Nintendo Game Cube",
+		"price": 125.0,
+		"edition": "Silver"
+	},
+	{
+		"id": "35",
+		"name": "Nintendo Game Cube",
+		"price": 110.0,
+		"edition": "Orange"
+	},
+	{
+		"id": "34",
+		"name": "Nintendo Game Cube",
+		"price": 130.0,
+		"edition": "Resident Evil 4"
+	},
+	{
+		"id": "33",
+		"name": "Nintendo Game Cube",
+		"price": 130.0,
+		"edition": "Metal"
+	},
+	{
+		"id": "32",
+		"name": "Nintendo Game Cube",
+		"price": 120.0,
+		"edition": "Pearl"
+	},
+	{
+		"id": "31",
+		"name": "Nintendo Game Cube",
+		"price": 125.0,
+		"edition": "Mobile Suit Gundam"
+	},
+	{
+		"id": "30",
+		"name": "Nintendo Game Cube",
+		"price": 130.0,
+		"edition": "Tales of Symphonia"
+	},
+	{
+		"id": "29",
+		"name": "PSP",
+		"price": 190.98,
+		"edition": "SLIM & LITE"
+	},
+	{
+		"id": "28",
+		"name": "PSP",
+		"price": 190.99,
+		"edition": "3000"
+	},
+	{
+		"id": "27",
+		"name": "PSP",
+		"price": 180.0,
+		"edition": "GO"
+	},
+	{
+		"id": "26",
+		"name": "PSP",
+		"price": 185.0,
+		"edition": "E1000"
+	},
+	{
+		"id": "25",
+		"name": "Nintendo DS",
+		"price": 65.0,
+		"edition": "Lite"
+	},
+	{
+		"id": "24",
+		"name": "Nintendo DS",
+		"price": 70.0,
+		"edition": "i"
+	},
+	{
+		"id": "23",
+		"name": "Nintendo DS",
+		"price": 80.0,
+		"edition": "i XL"
+	},
+	{
+		"id": "22",
+		"name": "Nintendo DS",
+		"price": 60.0,
+		"edition": "Classic"
+	},
+	{
+		"id": "21",
+		"name": "PS2",
+		"price": 165.0,
+		"edition": "Fat"
+	},
+	{
+		"id": "20",
+		"name": "PS2",
+		"price": 160.98,
+		"edition": "SLIM"
+	},
+	{
+		"id": "19",
+		"name": "PS3",
+		"price": 250.0,
+		"edition": "PRO"
+	},
+	{
+		"id": "18",
+		"name": "PS3",
+		"price": 225.99,
+		"edition": "SLIM"
+	},
+	{
+		"id": "17",
+		"name": "PS3",
+		"price": 250.0,
+		"edition": "Original"
+	},
+	{
+		"id": "16",
+		"name": "PS4",
+		"price": 600.0,
+		"edition": "ORIGINAL"
+	},
+	{
+		"id": "15",
+		"name": "PS4",
+		"price": 650.0,
+		"edition": "PRO"
+	},
+	{
+		"id": "14",
+		"name": "PS4",
+		"price": 550.0,
+		"edition": "SLIM"
+	},
+	{
+		"id": "13",
+		"name": "Xbox",
+		"price": 220.0,
+		"edition": "Original"
+	},
+	{
+		"id": "12",
+		"name": "Xbox",
+		"price": 165.0,
+		"edition": "360"
+	},
+	{
+		"id": "11",
+		"name": "Xbox",
+		"price": 400.0,
+		"edition": "360 S"
+	},
+	{
+		"id": "10",
+		"name": "Xbox",
+		"price": 500.98,
+		"edition": "One"
+	},
+	{
+		"id": "09",
+		"name": "Xbox",
+		"price": 550.0,
+		"edition": "One S"
+	},
+	{
+		"id": "08",
+		"name": "Xbox",
+		"price": 600.99,
+		"edition": "One X"
+	},
+	{
+		"id": "07",
+		"name": "Xbox",
+		"price": 520.0,
+		"edition": "Serie X"
+	},
+	{
+		"id": "06",
+		"name": "Nintendo Wii",
+		"price": 120.0,
+		"edition": "Family"
+	},
+	{
+		"id": "05",
+		"name": "Nintendo Wii",
+		"price": 130.0,
+		"edition": "Mini"
+	},
+	{
+		"id": "04",
+		"name": "Nintendo Wii",
+		"price": 220.0,
+		"edition": "U"
+	},
+	{
+		"id": "03",
+		"name": "Nintendo Switch",
+		"price": 320.0,
+		"edition": "LITE"
+	},
+	{
+		"id": "02",
+		"name": "XBOX ONE",
+		"price": 120.0,
+		"edition": "AUDI"
+	},
+	{
+		"id": "01",
+		"name": "PS4",
+		"price": 450.0,
+		"edition": "PRO"
+	}
+]
