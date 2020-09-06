@@ -1,0 +1,266 @@
+[
+  {
+    "income": "SALARY",
+    "date": "Aug 11, 2020 12:00:00 AM",
+    "amount": "1500"
+  },
+  {
+    "income": "Pocket Money",
+    "date": "Aug 1, 2020 12:00:00 AM",
+    "amount": "20"
+  },
+  {
+    "income": "Gift",
+    "date": "Aug 4, 2020 12:00:00 AM",
+    "amount": "500.36",
+    "newCategory": "OTHER CATEGORY"
+  },
+  {
+    "income": "SALARY",
+    "date": "Aug 14, 2020 12:00:00 AM",
+    "amount": "1000"
+  },
+  {
+    "income": "Pocket Money",
+    "date": "Aug 14, 2020 12:00:00 AM",
+    "amount": "510.20"
+  },
+  {
+    "income": "SALARY",
+    "date": "Jan 15, 2015 12:00:00 AM",
+    "amount": "1500"
+  },
+  {
+    "income": "SALARY",
+    "date": "Feb 15, 2015 12:00:00 AM",
+    "amount": "1500"
+  },
+  {
+    "income": "SALARY",
+    "date": "Mar 15, 2015 12:00:00 AM",
+    "amount": "1500"
+  },
+  {
+    "income": "SALARY",
+    "date": "Apr 15, 2015 12:00:00 AM",
+    "amount": "1500"
+  },
+  {
+    "income": "SALARY",
+    "date": "May 15, 2015 12:00:00 AM",
+    "amount": "1500"
+  },
+  {
+    "income": "SALARY",
+    "date": "Jun 15, 2015 12:00:00 AM",
+    "amount": "1500"
+  },
+  {
+    "income": "SALARY",
+    "date": "Jul 15, 2015 12:00:00 AM",
+    "amount": "1500"
+  },
+  {
+    "income": "SALARY",
+    "date": "Aug 15, 2015 12:00:00 AM",
+    "amount": "1500"
+  },
+  {
+    "income": "SALARY",
+    "date": "Aug 15, 2015 12:00:00 AM",
+    "amount": "1500"
+  },
+  {
+    "income": "SALARY",
+    "date": "Sep 15, 2015 12:00:00 AM",
+    "amount": "1500"
+  },
+  {
+    "income": "SALARY",
+    "date": "Oct 15, 2015 12:00:00 AM",
+    "amount": "1500"
+  },
+  {
+    "income": "SALARY",
+    "date": "Nov 15, 2015 12:00:00 AM",
+    "amount": "1500"
+  },
+  {
+    "income": "SALARY",
+    "date": "Dec 15, 2015 12:00:00 AM",
+    "amount": "1500"
+  },
+  {
+    "income": "SALARY",
+    "date": "Jan 15, 2016 12:00:00 AM",
+    "amount": "1500"
+  },
+  {
+    "income": "SALARY",
+    "date": "Feb 15, 2016 12:00:00 AM",
+    "amount": "1500"
+  },
+  {
+    "income": "SALARY",
+    "date": "Mar 15, 2016 12:00:00 AM",
+    "amount": "1500"
+  },
+  {
+    "income": "SALARY",
+    "date": "Apr 15, 2016 12:00:00 AM",
+    "amount": "1500"
+  },
+  {
+    "income": "SALARY",
+    "date": "May 15, 2016 12:00:00 AM",
+    "amount": "1500"
+  },
+  {
+    "income": "Pocket Money",
+    "date": "May 16, 2018 12:00:00 AM",
+    "amount": "700.69"
+  },
+  {
+    "income": "Pocket Money",
+    "date": "Jun 14, 2018 12:00:00 AM",
+    "amount": "48.57"
+  },
+  {
+    "income": "Pocket Money",
+    "date": "Jun 12, 2018 12:00:00 AM",
+    "amount": "68.12"
+  },
+  {
+    "income": "Pocket Money",
+    "date": "Jun 4, 2018 12:00:00 AM",
+    "amount": "20.56"
+  },
+  {
+    "income": "Pocket Money",
+    "date": "Jan 1, 2019 12:00:00 AM",
+    "amount": "36.54"
+  },
+  {
+    "income": "Pocket Money",
+    "date": "Feb 13, 2019 12:00:00 AM",
+    "amount": "96.87"
+  },
+  {
+    "income": "Pocket Money",
+    "date": "Feb 13, 2019 12:00:00 AM",
+    "amount": "96.87"
+  },
+  {
+    "income": "Gift",
+    "date": "Jan 2, 2020 12:00:00 AM",
+    "amount": "200.50",
+    "newCategory": "OTHER CATEGORY"
+  },
+  {
+    "income": "Gift",
+    "date": "Feb 7, 2020 12:00:00 AM",
+    "amount": "100.36",
+    "newCategory": "OTHER CATEGORY"
+  },
+  {
+    "income": "debt",
+    "date": "Feb 5, 2020 12:00:00 AM",
+    "amount": "85.36",
+    "newCategory": "OTHER CATEGORY"
+  },
+  {
+    "income": "Juan\u0027s Debt",
+    "date": "Feb 13, 2020 12:00:00 AM",
+    "amount": "100.25",
+    "newCategory": "OTHER CATEGORY"
+  },
+  {
+    "income": "Juan\u0027s Debt",
+    "date": "Mar 17, 2020 12:00:00 AM",
+    "amount": "200.58",
+    "newCategory": "OTHER CATEGORY"
+  },
+  {
+    "income": "Jose\u0027s Debt",
+    "date": "Apr 16, 2020 12:00:00 AM",
+    "amount": "300.54",
+    "newCategory": "OTHER CATEGORY"
+  },
+  {
+    "income": "Freelance services",
+    "date": "May 6, 2020 12:00:00 AM",
+    "amount": "1600.35",
+    "newCategory": "OTHER CATEGORY"
+  },
+  {
+    "income": "Freelance services",
+    "date": "Jun 11, 2020 12:00:00 AM",
+    "amount": "5000.96",
+    "newCategory": "OTHER CATEGORY"
+  },
+  {
+    "income": "Freelance services",
+    "date": "Jul 11, 2020 12:00:00 AM",
+    "amount": "25.85",
+    "newCategory": "OTHER CATEGORY"
+  },
+  {
+    "income": "Taxes Reimbursment",
+    "date": "Jul 9, 2020 12:00:00 AM",
+    "amount": "100.65",
+    "newCategory": "OTHER CATEGORY"
+  },
+  {
+    "income": "SALARY",
+    "date": "Jan 15, 2020 12:00:00 AM",
+    "amount": "1500.25"
+  },
+  {
+    "income": "SALARY",
+    "date": "Feb 15, 2020 12:00:00 AM",
+    "amount": "1500.25"
+  },
+  {
+    "income": "SALARY",
+    "date": "Mar 15, 2020 12:00:00 AM",
+    "amount": "1500.25"
+  },
+  {
+    "income": "SALARY",
+    "date": "Apr 15, 2020 12:00:00 AM",
+    "amount": "1500.25"
+  },
+  {
+    "income": "Pocket Money",
+    "date": "Feb 17, 2020 12:00:00 AM",
+    "amount": "150.23"
+  },
+  {
+    "income": "Pocket Money",
+    "date": "Mar 16, 2020 12:00:00 AM",
+    "amount": "200"
+  },
+  {
+    "income": "Pocket Money",
+    "date": "Apr 16, 2020 12:00:00 AM",
+    "amount": "360.01"
+  },
+  {
+    "income": "Software Project",
+    "date": "May 9, 2020 4:06:50 PM",
+    "amount": "200.52",
+    "newCategory": "OTHER CATEGORY"
+  },
+  {
+    "income": "Software Project",
+    "date": "Jun 13, 2020 4:06:50 PM",
+    "amount": "30.65",
+    "newCategory": "OTHER CATEGORY"
+  },
+  {
+    "income": "Software Project",
+    "date": "Jul 4, 2020 4:06:50 PM",
+    "amount": "8000.69",
+    "newCategory": "OTHER CATEGORY"
+  }
+]

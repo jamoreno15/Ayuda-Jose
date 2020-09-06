@@ -1,0 +1,352 @@
+[
+  {
+    "date": "Sep 12, 2019 7:40:03 PM",
+    "amount": "50.23",
+    "paymentMethod": "Credit Card",
+    "establishment": "Supermaxi",
+    "expense": "FOOD EXPENSE"
+  },
+  {
+    "date": "Sep 18, 2019 7:40:03 PM",
+    "amount": "10.50",
+    "paymentMethod": "Credit Card",
+    "establishment": "InkaBurguer",
+    "expense": "FOOD EXPENSE"
+  },
+  {
+    "date": "Oct 15, 2019 7:40:03 PM",
+    "amount": "40.56",
+    "paymentMethod": "Debit Card",
+    "establishment": "Tia",
+    "expense": "FOOD EXPENSE"
+  },
+  {
+    "date": "Oct 25, 2019 7:40:03 PM",
+    "amount": "15.10",
+    "paymentMethod": "Cash",
+    "establishment": "KFC",
+    "expense": "FOOD EXPENSE"
+  },
+  {
+    "date": "Oct 30, 2019 7:40:03 PM",
+    "amount": "36.10",
+    "paymentMethod": "Debit Card",
+    "establishment": "CREPES \u0026 WAFFLES",
+    "expense": "FOOD EXPENSE"
+  },
+  {
+    "date": "Nov 1, 2019 7:40:03 PM",
+    "amount": "80.10",
+    "paymentMethod": "Credit Card",
+    "establishment": "Santa Maria",
+    "expense": "FOOD EXPENSE"
+  },
+  {
+    "date": "Nov 8, 2019 7:40:03 PM",
+    "amount": "30.25",
+    "paymentMethod": "Debit Card",
+    "establishment": "PIZZA HUT",
+    "expense": "FOOD EXPENSE"
+  },
+  {
+    "date": "Nov 9, 2019 7:40:03 PM",
+    "amount": "17.50",
+    "paymentMethod": "Cash",
+    "establishment": "TROPIBURGER",
+    "expense": "FOOD EXPENSE"
+  },
+  {
+    "date": "Nov 12, 2019 7:40:03 PM",
+    "amount": "84.50",
+    "paymentMethod": "Credit Card",
+    "establishment": "VACO Y VACA",
+    "expense": "FOOD EXPENSE"
+  },
+  {
+    "date": "Nov 16, 2019 7:40:03 PM",
+    "amount": "5.00",
+    "paymentMethod": "Credit Card",
+    "establishment": "YOGURT AMAZONAS",
+    "expense": "FOOD EXPENSE"
+  },
+  {
+    "date": "Aug 7, 2020 7:51:07 PM",
+    "amount": "25.52",
+    "paymentMethod": "Cash",
+    "establishment": "Water payment",
+    "expense": "LIVING HOUSE EXPENSE"
+  },
+  {
+    "date": "Aug 20, 2020 7:51:07 PM",
+    "amount": "35.54",
+    "paymentMethod": "Cash",
+    "establishment": "Light payment",
+    "expense": "LIVING HOUSE EXPENSE"
+  },
+  {
+    "date": "Dec 11, 2019 7:52:42 PM",
+    "amount": "5.00",
+    "paymentMethod": "Cash",
+    "establishment": "Cruz azul",
+    "expense": "HEALTH EXPENSE"
+  },
+  {
+    "date": "Dec 12, 2019 7:52:42 PM",
+    "amount": "105.00",
+    "paymentMethod": "Credit Card",
+    "establishment": "Clinica de los Valles",
+    "expense": "HEALTH EXPENSE"
+  },
+  {
+    "date": "Dec 13, 2019 7:52:42 PM",
+    "amount": "12.23",
+    "paymentMethod": "Cash",
+    "establishment": "Sana Sana Pharmacy",
+    "expense": "HEALTH EXPENSE"
+  },
+  {
+    "date": "Dec 14, 2019 7:52:42 PM",
+    "amount": "25.24",
+    "paymentMethod": "Debit Card",
+    "establishment": "Fybeca",
+    "expense": "HEALTH EXPENSE"
+  },
+  {
+    "date": "Aug 22, 2019 7:56:06 PM",
+    "amount": "20.00",
+    "paymentMethod": "Debit Card",
+    "establishment": "Gym",
+    "expense": "HEALTH EXPENSE"
+  },
+  {
+    "date": "Aug 24, 2019 7:56:06 PM",
+    "amount": "120.00",
+    "paymentMethod": "Debit Card",
+    "establishment": "Health insurance",
+    "expense": "HEALTH EXPENSE"
+  },
+  {
+    "date": "Aug 25, 2019 7:56:06 PM",
+    "amount": "25.00",
+    "paymentMethod": "Cash",
+    "establishment": "Smiles Dental Clinic",
+    "expense": "HEALTH EXPENSE"
+  },
+  {
+    "date": "Aug 30, 2019 7:59:30 PM",
+    "amount": "150.00",
+    "paymentMethod": "Debit Card",
+    "establishment": "GMO",
+    "expense": "HEALTH EXPENSE"
+  },
+  {
+    "date": "Sep 17, 2019 7:59:30 PM",
+    "amount": "1000.00",
+    "paymentMethod": "Credit Card",
+    "establishment": "Surgery Clinic",
+    "expense": "HEALTH EXPENSE"
+  },
+  {
+    "date": "Sep 21, 2019 7:59:30 PM",
+    "amount": "1.00",
+    "paymentMethod": "Cash",
+    "establishment": "FARMARED\u0027S",
+    "expense": "HEALTH EXPENSE"
+  },
+  {
+    "date": "Jul 23, 2020 8:06:00 PM",
+    "amount": "150.00",
+    "paymentMethod": "Debit Card",
+    "establishment": "DePrati",
+    "expense": "CLOTHES EXPENSE"
+  },
+  {
+    "date": "Jul 10, 2020 8:06:00 PM",
+    "amount": "56.00",
+    "paymentMethod": "Credit Card",
+    "establishment": "Zara",
+    "expense": "CLOTHES EXPENSE"
+  },
+  {
+    "date": "Jul 9, 2020 8:06:00 PM",
+    "amount": "23.52",
+    "paymentMethod": "Cash",
+    "establishment": "totto",
+    "expense": "CLOTHES EXPENSE"
+  },
+  {
+    "date": "Oct 24, 2019 8:08:08 PM",
+    "amount": "45.52",
+    "paymentMethod": "Debit Card",
+    "establishment": "AEROPOSTALE",
+    "expense": "CLOTHES EXPENSE"
+  },
+  {
+    "date": "Oct 25, 2019 8:08:08 PM",
+    "amount": "48.00",
+    "paymentMethod": "Debit Card",
+    "establishment": "BATA",
+    "expense": "CLOTHES EXPENSE"
+  },
+  {
+    "date": "Oct 25, 2019 8:08:08 PM",
+    "amount": "35.84",
+    "paymentMethod": "Debit Card",
+    "establishment": "CREACIONES SUAREZ",
+    "expense": "CLOTHES EXPENSE"
+  },
+  {
+    "date": "Oct 19, 2019 8:08:08 PM",
+    "amount": "85.42",
+    "paymentMethod": "Credit Card",
+    "establishment": "ETAFASHION",
+    "expense": "CLOTHES EXPENSE"
+  },
+  {
+    "date": "Oct 26, 2019 8:08:08 PM",
+    "amount": "15.36",
+    "paymentMethod": "Debit Card",
+    "establishment": "Funky Fish",
+    "expense": "CLOTHES EXPENSE"
+  },
+  {
+    "date": "Oct 27, 2019 8:08:08 PM",
+    "amount": "65.36",
+    "paymentMethod": "Debit Card",
+    "establishment": "LEE",
+    "expense": "CLOTHES EXPENSE"
+  },
+  {
+    "date": "Oct 28, 2019 8:08:08 PM",
+    "amount": "75.62",
+    "paymentMethod": "Credit Card",
+    "establishment": "MARATHON",
+    "expense": "CLOTHES EXPENSE"
+  },
+  {
+    "date": "Mar 18, 2020 12:00:00 AM",
+    "amount": "100.23",
+    "paymentMethod": "Cash",
+    "establishment": "School Supplies",
+    "expense": "EDUCATION EXPENSE"
+  },
+  {
+    "date": "Mar 27, 2020 12:00:00 AM",
+    "amount": "40.23",
+    "paymentMethod": "Cash",
+    "establishment": "School transportation",
+    "expense": "EDUCATION EXPENSE"
+  },
+  {
+    "date": "Mar 13, 2020 12:00:00 AM",
+    "amount": "60.50",
+    "paymentMethod": "Cash",
+    "establishment": "Uniforms",
+    "expense": "EDUCATION EXPENSE"
+  },
+  {
+    "date": "Feb 17, 2020 12:00:00 AM",
+    "amount": "25.50",
+    "paymentMethod": "Cash",
+    "establishment": "School Pension",
+    "expense": "EDUCATION EXPENSE"
+  },
+  {
+    "date": "Feb 1, 2020 12:00:00 AM",
+    "amount": "35.00",
+    "paymentMethod": "Debit Card",
+    "establishment": "School enrollment   ",
+    "expense": "EDUCATION EXPENSE"
+  },
+  {
+    "date": "Feb 8, 2020 12:00:00 AM",
+    "amount": "28.00",
+    "paymentMethod": "Cash",
+    "establishment": "Computer equipment",
+    "expense": "EDUCATION EXPENSE"
+  },
+  {
+    "date": "Feb 14, 2020 12:00:00 AM",
+    "amount": "16.00",
+    "paymentMethod": "Debit Card",
+    "establishment": "Didactic materials",
+    "expense": "EDUCATION EXPENSE"
+  },
+  {
+    "date": "Feb 15, 2020 12:00:00 AM",
+    "amount": "145.00",
+    "paymentMethod": "Credit Card",
+    "establishment": "School Supplies",
+    "expense": "EDUCATION EXPENSE"
+  },
+  {
+    "date": "Feb 22, 2020 12:00:00 AM",
+    "amount": "45.00",
+    "paymentMethod": "Cash",
+    "establishment": "School Pension",
+    "expense": "EDUCATION EXPENSE"
+  },
+  {
+    "date": "Feb 29, 2020 12:00:00 AM",
+    "amount": "135.00",
+    "paymentMethod": "Debit Card",
+    "establishment": "School enrollment",
+    "expense": "EDUCATION EXPENSE"
+  },
+  {
+    "date": "Jan 16, 2019 8:22:25 PM",
+    "amount": "200.62",
+    "paymentMethod": "Cash",
+    "establishment": "Remodeling",
+    "expense": "LIVING HOUSE EXPENSE"
+  },
+  {
+    "date": "Jan 17, 2019 8:22:25 PM",
+    "amount": "200.00",
+    "paymentMethod": "Cash",
+    "establishment": "Rent",
+    "expense": "LIVING HOUSE EXPENSE"
+  },
+  {
+    "date": "Jan 17, 2019 8:22:25 PM",
+    "amount": "25.30",
+    "paymentMethod": "Debit Card",
+    "establishment": "Phone payment",
+    "expense": "LIVING HOUSE EXPENSE"
+  },
+  {
+    "date": "Jan 26, 2019 8:22:25 PM",
+    "amount": "700.30",
+    "paymentMethod": "Cash",
+    "establishment": "Enclosure construction",
+    "expense": "LIVING HOUSE EXPENSE"
+  },
+  {
+    "date": "Dec 19, 2018 8:22:25 PM",
+    "amount": "150.10",
+    "paymentMethod": "Credit Card",
+    "establishment": " TVcable payment",
+    "expense": "LIVING HOUSE EXPENSE"
+  },
+  {
+    "date": "Nov 21, 2018 8:22:25 PM",
+    "amount": "45.00",
+    "paymentMethod": "Debit Card",
+    "establishment": "internet payment",
+    "expense": "LIVING HOUSE EXPENSE"
+  },
+  {
+    "date": "Nov 17, 2018 8:22:25 PM",
+    "amount": "27.20",
+    "paymentMethod": "Cash",
+    "establishment": "Phone payment",
+    "expense": "LIVING HOUSE EXPENSE"
+  },
+  {
+    "date": "Nov 16, 2018 8:22:25 PM",
+    "amount": "85.20",
+    "paymentMethod": "Debit Card",
+    "establishment": "Light payment",
+    "expense": "LIVING HOUSE EXPENSE"
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "password": "1234",
+  "database": "PersonalFinances",
+  "host": "personalfinances.ajiox.mongodb.net",
+  "username": "katy"
+}
