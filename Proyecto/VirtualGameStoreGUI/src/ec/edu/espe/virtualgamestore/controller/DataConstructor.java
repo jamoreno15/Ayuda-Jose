@@ -13,19 +13,22 @@ import org.bson.Document;
  *
  * @author José Paulo Velasteguí
  */
-public class DataConstructor implements ControllerData{
-    DBManager dbManager = DBManager.getInstance();
-   
+public class DataConstructor implements ControllerData {
+
+    DBManager dbManager = new DBManager();
+    Document document = new Document();
+
     @Override
     public void saveGames(Game game) {
-        Document document = new Document();
+
         document.put("Pegi", game.getPegi());
         document.put("Id", game.getId());
         document.put("Name", game.getName());
-        document.put("Price",game.getPrice());
-        dbManager.saveData("Games", document);
+        document.put("Price", game.getPrice());
         System.out.println(document);
+        dbManager.saveData("Games", document);
         
+
     }
-    
+
 }

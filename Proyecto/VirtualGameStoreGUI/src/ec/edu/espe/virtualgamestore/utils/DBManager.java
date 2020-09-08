@@ -7,20 +7,12 @@ package ec.edu.espe.virtualgamestore.utils;
 
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;
-import com.mongodb.BasicDBObject;
-import com.mongodb.DB;
-import com.mongodb.DBCollection;
-import com.mongodb.Mongo;
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
-import ec.edu.espe.virtualgamestore.gui.view.FrmGameAdmin;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.net.UnknownHostException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import org.bson.Document;
 import org.json.simple.JSONObject;
 
@@ -33,7 +25,7 @@ public class DBManager {
     private static DBManager instance = null;
     public MongoDatabase connection;
 
-    private DBManager() {
+    public DBManager() {
         connection = startConnection();
     }
 

@@ -7,7 +7,9 @@ package ec.edu.espe.virtualgamestore.gui.view;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import ec.edu.espe.virtualgamestore.controller.DataConstructor;
 import ec.edu.espe.virtualgamestore.controller.Inventory;
+import ec.edu.espe.virtualgamestore.model.Accessory;
 import ec.edu.espe.virtualgamestore.model.Color;
 import ec.edu.espe.virtualgamestore.model.Game;
 import java.awt.event.KeyEvent;
@@ -34,7 +36,7 @@ public class FrmGameAdmin extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(null);
         setLocationRelativeTo(null);
-        File archivo = null;
+       /* File archivo = null;
         FileReader FileR = null;
         BufferedReader BufferedR = null;
 
@@ -78,7 +80,7 @@ public class FrmGameAdmin extends javax.swing.JFrame {
                 }
             } catch (IOException e2) {
             }
-        }
+        }*/
 
     }
 
@@ -94,12 +96,9 @@ public class FrmGameAdmin extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        txtPegi = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        txtId = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         txtName = new javax.swing.JTextField();
-        txtPrice = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         comboBoxColor = new javax.swing.JComboBox<>();
@@ -109,11 +108,13 @@ public class FrmGameAdmin extends javax.swing.JFrame {
         btnErase = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
+        fmtId = new javax.swing.JFormattedTextField();
+        fmtPegi = new javax.swing.JFormattedTextField();
+        fmtPrice = new javax.swing.JFormattedTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel1.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(102, 0, 102));
@@ -123,31 +124,9 @@ public class FrmGameAdmin extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(102, 0, 102));
         jLabel2.setText("ID:");
 
-        txtPegi.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtPegiActionPerformed(evt);
-            }
-        });
-        txtPegi.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txtPegiKeyTyped(evt);
-            }
-        });
-
         jLabel3.setFont(new java.awt.Font("Ebrima", 0, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(102, 0, 102));
         jLabel3.setText("Pegi:");
-
-        txtId.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtIdActionPerformed(evt);
-            }
-        });
-        txtId.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txtIdKeyTyped(evt);
-            }
-        });
 
         jLabel4.setFont(new java.awt.Font("Ebrima", 0, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(102, 0, 102));
@@ -156,12 +135,6 @@ public class FrmGameAdmin extends javax.swing.JFrame {
         txtName.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtNameKeyTyped(evt);
-            }
-        });
-
-        txtPrice.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txtPriceKeyTyped(evt);
             }
         });
 
@@ -230,29 +203,30 @@ public class FrmGameAdmin extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel2)
-                                    .addComponent(jLabel5)
                                     .addComponent(jLabel6)
                                     .addComponent(jLabel4))
                                 .addGap(194, 194, 194))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel7)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel7)
+                                    .addComponent(jLabel5))
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addGap(82, 82, 82)
                                         .addComponent(spinnerQuantity, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(0, 0, Short.MAX_VALUE))
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(comboBoxColor, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(txtId, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(txtPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(0, 0, Short.MAX_VALUE)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(fmtPrice)
+                                            .addComponent(comboBoxColor, 0, 107, Short.MAX_VALUE)
+                                            .addComponent(txtName, javax.swing.GroupLayout.DEFAULT_SIZE, 107, Short.MAX_VALUE)
+                                            .addComponent(fmtId)))))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel3)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(txtPegi, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(fmtPegi, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 128, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jButton3)
                             .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -266,7 +240,7 @@ public class FrmGameAdmin extends javax.swing.JFrame {
                 .addGap(48, 48, 48)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(txtId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(fmtId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(24, 24, 24)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -283,7 +257,7 @@ public class FrmGameAdmin extends javax.swing.JFrame {
                         .addGap(26, 26, 26)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel5)
-                            .addComponent(txtPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(fmtPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(25, 25, 25)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel6)
@@ -291,7 +265,7 @@ public class FrmGameAdmin extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel3)
-                    .addComponent(txtPegi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(fmtPegi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(128, 128, 128)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnAdd)
@@ -313,38 +287,9 @@ public class FrmGameAdmin extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtPegiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPegiActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtPegiActionPerformed
-
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
        //new FrmPrincipalMenu().setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
-
-    private void txtIdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtIdActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtIdActionPerformed
-
-    private void txtIdKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtIdKeyTyped
-        char c = evt.getKeyChar();
-        if (c < '0' || c > '9') {
-            evt.consume();
-        }
-
-        int press = evt.getKeyChar();
-        if (press == 10) {
-            String idfind = txtId.getText().trim();
-            Game a;
-
-        }
-    }//GEN-LAST:event_txtIdKeyTyped
-
-    private void txtPegiKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtPegiKeyTyped
-        char c = evt.getKeyChar();
-        if (c < '0' || c > '9') {
-            evt.consume();
-        }
-    }//GEN-LAST:event_txtPegiKeyTyped
 
     private void txtNameKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNameKeyTyped
         char c = evt.getKeyChar();
@@ -353,42 +298,28 @@ public class FrmGameAdmin extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_txtNameKeyTyped
 
-    private void txtPriceKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtPriceKeyTyped
-        char c = evt.getKeyChar();
-        if (c < '0' || c > '9') {
-            evt.consume();
-        }
-    }//GEN-LAST:event_txtPriceKeyTyped
-
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
 
-        Inventory inventory = new Inventory();
-        inventory.addProduct(Integer.valueOf(txtId.getText()),
-                (Integer.valueOf(txtPegi.getText())),
-                (txtName.getText()),
-                (comboBoxColor.getSelectedItem().toString()),
-                (Float.valueOf(txtPrice.getText())),
-                (Integer) spinnerQuantity.getValue());
-
-        System.out.println((Integer.valueOf(txtId.getText())
-                + (Integer.valueOf(txtPegi.getText()))
-                + (txtName.getText())
-                + (comboBoxColor.getSelectedItem().toString())
-                + (Float.valueOf(txtPrice.getText()))
-                + (Integer) spinnerQuantity.getValue()));
-        JOptionPane.showMessageDialog(this, "El producto fue añadido");
-        txtId.setText("");
-        txtName.setText("");
-        txtPrice.setText("");
-        txtPegi.setText("");
-        comboBoxColor.setSelectedItem("");
+        Game game = new Game();
+      
+        DataConstructor dataConstructor = new DataConstructor();
+        game.setColor(comboBoxColor.toString());
+        game.setId((int) fmtId.getValue());
+        game.setName(txtName.getText());
+        game.setPegi((int) fmtPegi.getValue());
+        game.setPrice((float) fmtPrice.getValue());
+        game.setQuantity((int) spinnerQuantity.getValue());
+        System.out.println(game);
+        dataConstructor.saveGames(game);
+        
+       
     }//GEN-LAST:event_btnAddActionPerformed
 
     private void btnEraseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEraseActionPerformed
-        txtId.setText("");
+        fmtId.setText("");
         txtName.setText("");
-        txtPrice.setText("");
-        txtPegi.setText("");
+        fmtPrice.setText("");
+        fmtPegi.setText("");
         comboBoxColor.setSelectedItem("");
     }//GEN-LAST:event_btnEraseActionPerformed
 
@@ -436,6 +367,9 @@ public class FrmGameAdmin extends javax.swing.JFrame {
     private javax.swing.JButton btnAdd;
     private javax.swing.JButton btnErase;
     private javax.swing.JComboBox<String> comboBoxColor;
+    private javax.swing.JFormattedTextField fmtId;
+    private javax.swing.JFormattedTextField fmtPegi;
+    private javax.swing.JFormattedTextField fmtPrice;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
@@ -447,9 +381,6 @@ public class FrmGameAdmin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JSpinner spinnerQuantity;
-    private javax.swing.JTextField txtId;
     private javax.swing.JTextField txtName;
-    private javax.swing.JTextField txtPegi;
-    private javax.swing.JTextField txtPrice;
     // End of variables declaration//GEN-END:variables
 }
