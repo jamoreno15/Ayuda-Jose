@@ -72,7 +72,6 @@ public class DBManager {
 
     }
 
-   
     /*public void saveConsoles(String id, String name, String price, String edition) {
         BasicDBObject document = new BasicDBObject();
         document.put("Id", "'" + id + "'");

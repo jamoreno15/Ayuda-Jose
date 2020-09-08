@@ -3,12 +3,36 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Desktop/VirtualGameStore/Ayuda-Jose/Proyecto/VirtualGameStoreGUI/src/ec/edu/espe/virtualgamestore/gui/view/FrmGameAdmin.java</file>
             <file>file:/C:/Desktop/VirtualGameStore/Ayuda-Jose/Proyecto/VirtualGameStoreGUI/src/ec/edu/espe/virtualgamestore/controller/DataConstructor.java</file>
             <file>file:/C:/Desktop/VirtualGameStore/Ayuda-Jose/Proyecto/VirtualGameStoreGUI/src/ec/edu/espe/virtualgamestore/utils/DBManager.java</file>
             <file>file:/C:/Desktop/VirtualGameStore/Ayuda-Jose/Proyecto/VirtualGameStoreGUI/src/ec/edu/espe/virtualgamestore/controller/ControllerData.java</file>
             <file>file:/C:/Desktop/VirtualGameStore/Ayuda-Jose/Proyecto/VirtualGameStoreGUI/HostConfiguration.json</file>
             <file>file:/C:/Desktop/VirtualGameStore/Ayuda-Jose/Proyecto/VirtualGameStoreGUI/src/ec/edu/espe/virtualgamestore/model/Game.java</file>
+=======
+            <file>file:/C:/Users/Usuario/Desktop/Ayuda%20Jose/Ayuda-Jose/Proyecto/VirtualGameStoreGUI/src/ec/edu/espe/virtualgamestore/gui/view/FrmLogInAdmin.java</file>
+            <file>file:/C:/Users/Usuario/Desktop/Ayuda%20Jose/Ayuda-Jose/Proyecto/VirtualGameStoreGUI/src/ec/edu/espe/virtualgamestore/utils/MongoDBManager.java</file>
+            <file>file:/C:/Users/Usuario/Desktop/Ayuda%20Jose/Ayuda-Jose/Proyecto/VirtualGameStoreGUI/src/ec/edu/espe/virtualgamestore/utils/JsonFileAdministrator.java</file>
+            <file>file:/C:/Users/Usuario/Desktop/Ayuda%20Jose/Ayuda-Jose/Proyecto/VirtualGameStoreGUI/src/ec/edu/espe/virtualgamestore/gui/view/FrmLogInUser.java</file>
+            <file>file:/C:/Users/Usuario/Desktop/Ayuda%20Jose/Ayuda-Jose/Proyecto/VirtualGameStoreGUI/src/ec/edu/espe/virtualgamestore/utils/DBManager.java</file>
+            <file>file:/C:/Users/Usuario/Desktop/Ayuda%20Jose/Ayuda-Jose/Proyecto/VirtualGameStoreGUI/src/ec/edu/espe/virtualgamestore/gui/view/FrmUserType.java</file>
+            <file>file:/C:/Users/Usuario/Desktop/Ayuda%20Jose/Ayuda-Jose/Proyecto/VirtualGameStoreGUI/src/ec/edu/espe/virtualgamestore/utils/IDataAccessObject.java</file>
+            <file>file:/C:/Users/Usuario/Desktop/Ayuda%20Jose/Ayuda-Jose/Proyecto/VirtualGameStoreGUI/src/ec/edu/espe/virtualgamestore/gui/view/FrmSplashScreen.java</file>
+            <file>file:/C:/Users/Usuario/Desktop/Ayuda%20Jose/Ayuda-Jose/Proyecto/VirtualGameStoreGUI/src/ec/edu/espe/virtualgamestore/gui/view/FrmGameAdmin.java</file>
+            <file>file:/C:/Users/Usuario/Desktop/Ayuda%20Jose/Ayuda-Jose/Proyecto/VirtualGameStoreGUI/src/ec/edu/espe/virtualgamestore/gui/view/FrmPrincipalMenuUser.java</file>
+            <file>file:/C:/Users/Usuario/Desktop/Ayuda%20Jose/Ayuda-Jose/Proyecto/VirtualGameStoreGUI/src/ec/edu/espe/virtualgamestore/gui/view/FrmAccessoryAdmin.java</file>
+            <file>file:/C:/Users/Usuario/Desktop/Ayuda%20Jose/Ayuda-Jose/Proyecto/VirtualGameStoreGUI/src/ec/edu/espe/virtualgamestore/utils/FileUsers.java</file>
+            <file>file:/C:/Users/Usuario/Desktop/Ayuda%20Jose/Ayuda-Jose/Proyecto/VirtualGameStoreGUI/src/ec/edu/espe/virtualgamestore/gui/view/FrmRegister.java</file>
+            <file>file:/C:/Users/Usuario/Desktop/Ayuda%20Jose/Ayuda-Jose/Proyecto/VirtualGameStoreGUI/src/ec/edu/espe/virtualgamestore/gui/view/FrmContact.java</file>
+            <file>file:/C:/Users/Usuario/Desktop/Ayuda%20Jose/Ayuda-Jose/Proyecto/VirtualGameStoreGUI/src/ec/edu/espe/virtualgamestore/gui/view/FrmGameInventory.java</file>
+            <file>file:/C:/Users/Usuario/Desktop/Ayuda%20Jose/Ayuda-Jose/Proyecto/VirtualGameStoreGUI/src/ec/edu/espe/virtualgamestore/utils/HostConfiguration.java</file>
+            <file>file:/C:/Users/Usuario/Desktop/Ayuda%20Jose/Ayuda-Jose/Proyecto/VirtualGameStoreGUI/src/ec/edu/espe/virtualgamestore/gui/view/FrmAccessoryInventory.java</file>
+            <file>file:/C:/Users/Usuario/Desktop/Ayuda%20Jose/Ayuda-Jose/Proyecto/VirtualGameStoreGUI/src/ec/edu/espe/virtualgamestore/controller/DataConstructor.java</file>
+            <file>file:/C:/Users/Usuario/Desktop/Ayuda%20Jose/Ayuda-Jose/Proyecto/VirtualGameStoreGUI/src/ec/edu/espe/virtualgamestore/gui/view/FrmPrincipalMenuAdmin.java</file>
+            <file>file:/C:/Users/Usuario/Desktop/Ayuda%20Jose/Ayuda-Jose/Proyecto/VirtualGameStoreGUI/src/ec/edu/espe/virtualgamestore/controller/ItemsManager.java</file>
+            <file>file:/C:/Users/Usuario/Desktop/Ayuda%20Jose/Ayuda-Jose/Proyecto/VirtualGameStoreGUI/src/ec/edu/espe/virtualgamestore/controller/Inventory.java</file>
+>>>>>>> e060d68051fde43c50acd1593fcdbc3d8410554e
         </group>
     </open-files>
 </project-private>

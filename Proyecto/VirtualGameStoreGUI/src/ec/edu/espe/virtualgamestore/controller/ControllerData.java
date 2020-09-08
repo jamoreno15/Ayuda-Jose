@@ -5,6 +5,7 @@
  */
 package ec.edu.espe.virtualgamestore.controller;
 
+import ec.edu.espe.virtualgamestore.model.Accessory;
 import ec.edu.espe.virtualgamestore.model.Game;
 
 /**
@@ -14,6 +15,6 @@ import ec.edu.espe.virtualgamestore.model.Game;
 public interface ControllerData {
 
     public void saveGames(Game game);
-       
+    public void saveAccessories(Accessory accessory);
     
 }

@@ -37,8 +37,6 @@ public class FrmRegister extends javax.swing.JFrame {
      */
     public FrmRegister() {
 
-        
- 
         try {
 
             Mongo mongo = new Mongo("localhost", 27017);
@@ -54,8 +52,6 @@ public class FrmRegister extends javax.swing.JFrame {
         RestrictedTextField restrict = new RestrictedTextField(ageTxt);
         restrict.setLimit(2);
     }
-   
-      
 
     /**
      * This method is called from within the constructor to initialize the form.

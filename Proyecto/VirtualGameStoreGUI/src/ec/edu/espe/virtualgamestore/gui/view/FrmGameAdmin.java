@@ -106,30 +106,35 @@ public class FrmGameAdmin extends javax.swing.JFrame {
         spinnerQuantity = new javax.swing.JSpinner();
         btnAdd = new javax.swing.JButton();
         btnErase = new javax.swing.JButton();
+<<<<<<< HEAD
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         fmtId = new javax.swing.JFormattedTextField();
         fmtPegi = new javax.swing.JFormattedTextField();
         fmtPrice = new javax.swing.JFormattedTextField();
+=======
+        btnSee = new javax.swing.JButton();
+        btnReturn = new javax.swing.JButton();
+>>>>>>> e060d68051fde43c50acd1593fcdbc3d8410554e
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
 
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(102, 0, 102));
+        jLabel1.setForeground(new java.awt.Color(153, 0, 204));
         jLabel1.setText("Gestión de Inventario Para Los Juguetes");
 
         jLabel2.setFont(new java.awt.Font("Ebrima", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(102, 0, 102));
+        jLabel2.setForeground(new java.awt.Color(153, 0, 204));
         jLabel2.setText("ID:");
 
         jLabel3.setFont(new java.awt.Font("Ebrima", 0, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(102, 0, 102));
+        jLabel3.setForeground(new java.awt.Color(153, 0, 204));
         jLabel3.setText("Pegi:");
 
         jLabel4.setFont(new java.awt.Font("Ebrima", 0, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(102, 0, 102));
+        jLabel4.setForeground(new java.awt.Color(153, 0, 255));
         jLabel4.setText("Nombre:");
 
         txtName.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -139,16 +144,16 @@ public class FrmGameAdmin extends javax.swing.JFrame {
         });
 
         jLabel5.setFont(new java.awt.Font("Ebrima", 0, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(102, 0, 102));
+        jLabel5.setForeground(new java.awt.Color(153, 0, 255));
         jLabel5.setText("Precio::");
 
         jLabel6.setBackground(new java.awt.Color(102, 0, 102));
         jLabel6.setFont(new java.awt.Font("Ebrima", 0, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(102, 0, 102));
+        jLabel6.setForeground(new java.awt.Color(153, 0, 204));
         jLabel6.setText("Color:");
 
         jLabel7.setFont(new java.awt.Font("Ebrima", 0, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(102, 0, 102));
+        jLabel7.setForeground(new java.awt.Color(153, 0, 204));
         jLabel7.setText("Cantidad:");
 
         btnAdd.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/virtualgamestore/pictures/ADD.png"))); // NOI18N
@@ -167,19 +172,19 @@ public class FrmGameAdmin extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/virtualgamestore/pictures/ver almacer.png"))); // NOI18N
-        jButton3.setText("Mostrar Inventario");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btnSee.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/virtualgamestore/pictures/ver almacer.png"))); // NOI18N
+        btnSee.setText("Mostrar Inventario");
+        btnSee.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btnSeeActionPerformed(evt);
             }
         });
 
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/virtualgamestore/pictures/regresar.png"))); // NOI18N
-        jButton4.setText("  Regresar");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        btnReturn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/virtualgamestore/pictures/regresar.png"))); // NOI18N
+        btnReturn.setText("  Regresar");
+        btnReturn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                btnReturnActionPerformed(evt);
             }
         });
 
@@ -228,8 +233,8 @@ public class FrmGameAdmin extends javax.swing.JFrame {
                                 .addComponent(fmtPegi, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 128, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton3)
-                            .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btnSee)
+                            .addComponent(btnReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(102, 102, 102))))
         );
         jPanel1Layout.setVerticalGroup(
@@ -244,10 +249,10 @@ public class FrmGameAdmin extends javax.swing.JFrame {
                 .addGap(24, 24, 24)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton3)
+                        .addComponent(btnSee)
                         .addGap(99, 99, 99)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel7)
                             .addComponent(spinnerQuantity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -287,9 +292,20 @@ public class FrmGameAdmin extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
        //new FrmPrincipalMenu().setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void txtPegiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPegiActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPegiActionPerformed
+
+    private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturnActionPerformed
+        new FrmPrincipalMenuAdmin().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnReturnActionPerformed
+
 
     private void txtNameKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNameKeyTyped
         char c = evt.getKeyChar();
@@ -299,6 +315,7 @@ public class FrmGameAdmin extends javax.swing.JFrame {
     }//GEN-LAST:event_txtNameKeyTyped
 
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
+
 
         Game game = new Game();
       
@@ -312,7 +329,31 @@ public class FrmGameAdmin extends javax.swing.JFrame {
         System.out.println(game);
         dataConstructor.saveGames(game);
         
+
+        /*
+        Inventory inventory = new Inventory();
+        inventory.addProduct(Integer.valueOf(txtId.getText()),
+                (Integer.valueOf(txtPegi.getText())),
+                (txtName.getText()),
+                (comboBoxColor.getSelectedItem().toString()),
+                (Float.valueOf(txtPrice.getText())),
+                (Integer) spinnerQuantity.getValue());
+
+        System.out.println((Integer.valueOf(txtId.getText())
+                + (Integer.valueOf(txtPegi.getText()))
+                + (txtName.getText())
+                + (comboBoxColor.getSelectedItem().toString())
+                + (Float.valueOf(txtPrice.getText()))
+                + (Integer) spinnerQuantity.getValue()));
+         */
+        JOptionPane.showMessageDialog(this, "El producto fue añadido");
        
+        txtName.setText("");
+        
+       
+        comboBoxColor.setSelectedItem("");
+
+
     }//GEN-LAST:event_btnAddActionPerformed
 
     private void btnEraseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEraseActionPerformed
@@ -323,10 +364,10 @@ public class FrmGameAdmin extends javax.swing.JFrame {
         comboBoxColor.setSelectedItem("");
     }//GEN-LAST:event_btnEraseActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void btnSeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSeeActionPerformed
         new FrmGameInventory().setVisible(true);
         dispose();
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_btnSeeActionPerformed
 
     /**
      * @param args the command line arguments
@@ -366,12 +407,17 @@ public class FrmGameAdmin extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAdd;
     private javax.swing.JButton btnErase;
+    private javax.swing.JButton btnReturn;
+    private javax.swing.JButton btnSee;
     private javax.swing.JComboBox<String> comboBoxColor;
+<<<<<<< HEAD
     private javax.swing.JFormattedTextField fmtId;
     private javax.swing.JFormattedTextField fmtPegi;
     private javax.swing.JFormattedTextField fmtPrice;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+=======
+>>>>>>> e060d68051fde43c50acd1593fcdbc3d8410554e
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

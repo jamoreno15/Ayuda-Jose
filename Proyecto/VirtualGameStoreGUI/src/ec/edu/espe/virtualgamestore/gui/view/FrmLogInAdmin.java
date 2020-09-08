@@ -323,8 +323,8 @@ public class FrmLogInAdmin extends javax.swing.JFrame {
         try {
             while (cursorUsername.hasNext() && cursorPassword.hasNext()) {
                 JOptionPane.showMessageDialog(null, "Welcome " + txtUser.getText());
-                FrmPrincipalMenuUser frmPrincipalMenu = new FrmPrincipalMenuUser();
-                frmPrincipalMenu.setVisible(true);
+                FrmPrincipalMenuAdmin Admin = new FrmPrincipalMenuAdmin();
+                Admin.setVisible(true);
                 this.setVisible(false);
                 return;
 

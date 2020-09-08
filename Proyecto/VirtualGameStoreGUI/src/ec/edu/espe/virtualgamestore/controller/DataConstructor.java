@@ -5,6 +5,7 @@
  */
 package ec.edu.espe.virtualgamestore.controller;
 
+import ec.edu.espe.virtualgamestore.model.Accessory;
 import ec.edu.espe.virtualgamestore.model.Game;
 import ec.edu.espe.virtualgamestore.utils.DBManager;
 import org.bson.Document;
@@ -15,8 +16,11 @@ import org.bson.Document;
  */
 public class DataConstructor implements ControllerData {
 
-    DBManager dbManager = new DBManager();
+
     Document document = new Document();
+
+    DBManager dbManager = DBManager.getInstance();
+
 
     @Override
     public void saveGames(Game game) {
@@ -25,9 +29,24 @@ public class DataConstructor implements ControllerData {
         document.put("Id", game.getId());
         document.put("Name", game.getName());
         document.put("Price", game.getPrice());
-        System.out.println(document);
+
         dbManager.saveData("Games", document);
         
+
+        dbManager.saveData("Games", document);
+        System.out.println(document);
+
+    }
+
+    @Override
+    public void saveAccessories(Accessory accessory) {
+        Document document = new Document();
+
+        document.put("Id", accessory.getId());
+        document.put("Name", accessory.getName());
+        document.put("Price", accessory.getPrice());
+        dbManager.saveData("Accessory", document);
+        System.out.println(document);
 
     }
 
