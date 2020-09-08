@@ -9,7 +9,7 @@ import ec.edu.espe.virtualgamestore.model.Game;
 
 /**
  *
- * @author José Paulo Velasteguí
+ * @author JavaMasters
  */
 public interface ControllerData {
 
