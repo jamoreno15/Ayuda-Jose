@@ -10,17 +10,14 @@ import org.json.simple.JSONObject;
  *
  * @author VirtualGameStore
  */
-public class HostConfiguration
-{
-    public static void writeData(JSONObject configuration) throws IOException
-    {
+public class HostConfiguration {
+
+    public static void writeData(JSONObject configuration) throws IOException {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         FileWriter fileWriter = new FileWriter("DatabaseConfiguration.json");
-        gson.toJson(configuration,fileWriter);
+        gson.toJson(configuration, fileWriter);
         fileWriter.close();
 
     }
-       
-        
-        
+
 }

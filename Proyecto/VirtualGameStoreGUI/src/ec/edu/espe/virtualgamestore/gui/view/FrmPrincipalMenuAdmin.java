@@ -118,7 +118,7 @@ public class FrmPrincipalMenuAdmin extends javax.swing.JFrame {
     }//GEN-LAST:event_MnuExitActionPerformed
 
     private void mnuGameMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_mnuGameMouseClicked
-new FrmGameAdmin().setVisible(true);
+        new FrmGameAdmin().setVisible(true);
         dispose();
 
     }//GEN-LAST:event_mnuGameMouseClicked

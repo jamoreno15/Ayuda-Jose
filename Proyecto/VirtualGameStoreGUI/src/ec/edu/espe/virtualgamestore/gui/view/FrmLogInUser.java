@@ -5,8 +5,6 @@
  */
 package ec.edu.espe.virtualgamestore.gui.view;
 
-
-
 import com.mongodb.BasicDBObject;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
@@ -24,10 +22,12 @@ import javax.swing.JOptionPane;
  * @author JavaMasters
  */
 public class FrmLogInUser extends javax.swing.JFrame {
-  DB db;
+
+    DB db;
     DBCollection userData;
+
     public FrmLogInUser() {
- try {
+        try {
 
             Mongo mongo = new Mongo("localhost", 27017);
             db = mongo.getDB("UserData");
@@ -38,7 +38,7 @@ public class FrmLogInUser extends javax.swing.JFrame {
         }
         initComponents();
         setLocationRelativeTo(null);
-        
+
     }
 
     @SuppressWarnings("unchecked")
@@ -122,7 +122,7 @@ public class FrmLogInUser extends javax.swing.JFrame {
         LoginBTN.setBackground(new java.awt.Color(94, 53, 126));
         LoginBTN.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
         LoginBTN.setForeground(new java.awt.Color(255, 255, 255));
-        LoginBTN.setText("LOG IN");
+        LoginBTN.setText("Entrar");
         LoginBTN.setBorderPainted(false);
         LoginBTN.setContentAreaFilled(false);
         LoginBTN.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -157,7 +157,7 @@ public class FrmLogInUser extends javax.swing.JFrame {
         RegisterBTN.setBackground(new java.awt.Color(92, 57, 163));
         RegisterBTN.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
         RegisterBTN.setForeground(new java.awt.Color(92, 57, 163));
-        RegisterBTN.setText("Register");
+        RegisterBTN.setText("Registrarse");
         RegisterBTN.setContentAreaFilled(false);
         RegisterBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         RegisterBTN.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -248,11 +248,12 @@ public class FrmLogInUser extends javax.swing.JFrame {
                         .addGroup(pnlRegisteUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(pnlRegisteUserLayout.createSequentialGroup()
                                 .addGap(68, 68, 68)
-                                .addComponent(sptRegister, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(pnlRegisteUserLayout.createSequentialGroup()
-                                .addGap(59, 59, 59)
-                                .addComponent(RegisterBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addComponent(sptRegister, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 10, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlRegisteUserLayout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(RegisterBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap(21, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlRegisteUserLayout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addGroup(pnlRegisteUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -354,27 +355,27 @@ public class FrmLogInUser extends javax.swing.JFrame {
     }//GEN-LAST:event_txtUserActionPerformed
 
     private void LoginBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginBTNActionPerformed
-       //txtUser.getText()
-       //txtPassword.getText()
- DBObject queryUsername = new BasicDBObject("Name", new BasicDBObject("$regex", txtUser.getText()));
+        //txtUser.getText()
+        //txtPassword.getText()
+        DBObject queryUsername = new BasicDBObject("Name", new BasicDBObject("$regex", txtUser.getText()));
         DBObject queryPassword = new BasicDBObject("Password", new BasicDBObject("$regex", txtPassword.getText()));
         DBCursor cursorUsername = userData.find(queryUsername);
         DBCursor cursorPassword = userData.find(queryPassword);
         try {
             while (cursorUsername.hasNext() && cursorPassword.hasNext()) {
-                JOptionPane.showMessageDialog(null, "Welcome "+ txtUser.getText());
-                  FrmPrincipalMenuUser frmPrincipalMenu = new FrmPrincipalMenuUser();
+                JOptionPane.showMessageDialog(null, "Welcome " + txtUser.getText());
+                FrmPrincipalMenuUser frmPrincipalMenu = new FrmPrincipalMenuUser();
                 frmPrincipalMenu.setVisible(true);
                 this.setVisible(false);
-                 return;
-                
+                return;
+
             }
         } finally {
             cursorUsername.close();
 
         }
         JOptionPane.showMessageDialog(null, "Incorrect User/Password");
-      
+
     }//GEN-LAST:event_LoginBTNActionPerformed
 
     private void LoginBTNMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LoginBTNMouseExited

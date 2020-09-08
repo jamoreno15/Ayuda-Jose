@@ -7,6 +7,9 @@ package ec.edu.espe.virtualgamestore.gui.view;
 
 import java.awt.Graphics;
 import java.awt.Image;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 
@@ -118,12 +121,20 @@ public class FrmPrincipalMenuUser extends javax.swing.JFrame {
     }//GEN-LAST:event_MnuExitActionPerformed
 
     private void mnuGameMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_mnuGameMouseClicked
-
+        try {
+            new FrmGame().setVisible(true);
+        } catch (IOException ex) {
+            Logger.getLogger(FrmPrincipalMenuUser.class.getName()).log(Level.SEVERE, null, ex);
+        }
 
     }//GEN-LAST:event_mnuGameMouseClicked
 
     private void mnuAccesoryMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_mnuAccesoryMouseClicked
-
+        try {
+            new FrmAccessory().setVisible(true);
+        } catch (IOException ex) {
+            Logger.getLogger(FrmPrincipalMenuUser.class.getName()).log(Level.SEVERE, null, ex);
+        }
 
     }//GEN-LAST:event_mnuAccesoryMouseClicked
 

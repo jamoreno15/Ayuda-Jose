@@ -14,6 +14,7 @@ import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
 import com.mongodb.Mongo;
 import com.mongodb.ReadPreference;
+import ec.edu.espe.virtualgamestore.model.Accessory;
 import ec.edu.espe.virtualgamestore.model.Game;
 
 import ec.edu.espe.virtualgamestore.model.User;
