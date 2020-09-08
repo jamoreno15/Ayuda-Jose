@@ -43,8 +43,8 @@ public class FrmAccessoryAdmin extends javax.swing.JFrame {
         spinnerQuantity = new javax.swing.JSpinner();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        btnSee = new javax.swing.JButton();
+        btnReturn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -52,11 +52,11 @@ public class FrmAccessoryAdmin extends javax.swing.JFrame {
         jPanel1.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(102, 0, 102));
+        jLabel1.setForeground(new java.awt.Color(153, 0, 255));
         jLabel1.setText("Gestión de Inventario Para Los Accesorios");
 
         jLabel2.setFont(new java.awt.Font("Ebrima", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(102, 0, 102));
+        jLabel2.setForeground(new java.awt.Color(153, 0, 255));
         jLabel2.setText("ID:");
 
         txtPegi.addActionListener(new java.awt.event.ActionListener() {
@@ -66,24 +66,24 @@ public class FrmAccessoryAdmin extends javax.swing.JFrame {
         });
 
         jLabel3.setFont(new java.awt.Font("Ebrima", 0, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(102, 0, 102));
+        jLabel3.setForeground(new java.awt.Color(153, 0, 255));
         jLabel3.setText("Pegi:");
 
         jLabel4.setFont(new java.awt.Font("Ebrima", 0, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(102, 0, 102));
+        jLabel4.setForeground(new java.awt.Color(153, 0, 255));
         jLabel4.setText("Nombre:");
 
         jLabel5.setFont(new java.awt.Font("Ebrima", 0, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(102, 0, 102));
+        jLabel5.setForeground(new java.awt.Color(153, 0, 255));
         jLabel5.setText("Precio::");
 
         jLabel6.setBackground(new java.awt.Color(102, 0, 102));
         jLabel6.setFont(new java.awt.Font("Ebrima", 0, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(102, 0, 102));
+        jLabel6.setForeground(new java.awt.Color(153, 0, 255));
         jLabel6.setText("Color:");
 
         jLabel7.setFont(new java.awt.Font("Ebrima", 0, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(102, 0, 102));
+        jLabel7.setForeground(new java.awt.Color(153, 0, 255));
         jLabel7.setText("Cantidad:");
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/virtualgamestore/pictures/ADD.png"))); // NOI18N
@@ -92,14 +92,19 @@ public class FrmAccessoryAdmin extends javax.swing.JFrame {
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/virtualgamestore/pictures/Erase.png"))); // NOI18N
         jButton2.setText("Borrar");
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/virtualgamestore/pictures/ver almacer.png"))); // NOI18N
-        jButton3.setText("Mostrar Inventario");
-
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/virtualgamestore/pictures/regresar.png"))); // NOI18N
-        jButton4.setText("  Regresar");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        btnSee.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/virtualgamestore/pictures/ver almacer.png"))); // NOI18N
+        btnSee.setText("Mostrar Inventario");
+        btnSee.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                btnSeeActionPerformed(evt);
+            }
+        });
+
+        btnReturn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/virtualgamestore/pictures/regresar.png"))); // NOI18N
+        btnReturn.setText("  Regresar");
+        btnReturn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnReturnActionPerformed(evt);
             }
         });
 
@@ -110,7 +115,6 @@ public class FrmAccessoryAdmin extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(43, 43, 43)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jButton1)
                         .addGap(112, 112, 112)
@@ -133,16 +137,20 @@ public class FrmAccessoryAdmin extends javax.swing.JFrame {
                             .addComponent(spinnerQuantity))
                         .addGap(109, 109, 109)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(btnSee, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnReturn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap(125, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(102, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(89, 89, 89))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(25, 25, 25)
+                .addGap(22, 22, 22)
                 .addComponent(jLabel1)
-                .addGap(48, 48, 48)
+                .addGap(51, 51, 51)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtPegi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3))
@@ -154,7 +162,7 @@ public class FrmAccessoryAdmin extends javax.swing.JFrame {
                             .addComponent(jLabel2)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(37, 37, 37)
-                        .addComponent(jButton3)))
+                        .addComponent(btnSee)))
                 .addGap(45, 45, 45)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -167,7 +175,7 @@ public class FrmAccessoryAdmin extends javax.swing.JFrame {
                             .addComponent(txtPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGap(12, 12, 12)
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(btnReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(49, 49, 49)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
@@ -201,9 +209,15 @@ public class FrmAccessoryAdmin extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtPegiActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturnActionPerformed
+        new FrmGameInventory().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnReturnActionPerformed
+
+    private void btnSeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSeeActionPerformed
+        new FrmGameInventory().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnSeeActionPerformed
 
     /**
      * @param args the command line arguments
@@ -242,11 +256,11 @@ public class FrmAccessoryAdmin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnReturn;
+    private javax.swing.JButton btnSee;
     private javax.swing.JComboBox<String> comboBoxColor;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

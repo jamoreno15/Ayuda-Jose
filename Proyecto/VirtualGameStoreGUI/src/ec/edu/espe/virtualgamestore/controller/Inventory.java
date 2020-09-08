@@ -1,6 +1,7 @@
 package ec.edu.espe.virtualgamestore.controller;
 
 import com.google.gson.Gson;
+import ec.edu.espe.virtualgamestore.model.Accessory;
 
 import ec.edu.espe.virtualgamestore.utils.IDataAccessObject;
 import ec.edu.espe.virtualgamestore.utils.JsonFileAdministrator;
@@ -25,7 +26,7 @@ public class Inventory {
 
         IDataAccessObject dataAccessObject = new MongoDBManager();
         dataAccessObject.addToFile(game);
-   
+
     }
 
     public void update(ArrayList<Game> inventory) {
@@ -117,5 +118,6 @@ public class Inventory {
         return inventory;
 
     }
+
 
 }

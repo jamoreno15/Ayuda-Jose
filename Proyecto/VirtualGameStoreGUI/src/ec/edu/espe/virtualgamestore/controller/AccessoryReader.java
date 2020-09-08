@@ -29,7 +29,7 @@ public class AccessoryReader {
 
         String accessoryJson = "";
 
-        accessoryJson = new String(Files.readAllBytes(Paths.get("accessory.json")));
+        accessoryJson = new String(Files.readAllBytes(Paths.get("Accesory.json")));
 
         accessoryJson = accessoryJson.replace("\\", "");
 

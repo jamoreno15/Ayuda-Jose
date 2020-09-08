@@ -20,17 +20,16 @@ import java.util.ArrayList;
  *
  * @author JavaMasters
  */
-public class FileUsers implements IDataAccessObject{
-     static Gson gson = new Gson();
-        
-    
-    public  ArrayList<Object> readObjects(String nameClass){
+public class FileUsers implements IDataAccessObject {
+
+    static Gson gson = new Gson();
+
+    public ArrayList<Object> readObjects(String nameClass) {
         JsonParser parser = new JsonParser();
         ArrayList<Object> objects = new ArrayList<>();
-        try{
-            File f=new File(nameClass+".json");
-            if(f.exists())
-            {
+        try {
+            File f = new File(nameClass + ".json");
+            if (f.exists()) {
                 FileReader fr = new FileReader(f);
                 JsonElement dates = parser.parse(fr);
                 JsonArray jArray = dates.getAsJsonArray();
@@ -39,56 +38,55 @@ public class FileUsers implements IDataAccessObject{
                     Object object = gson.fromJson(jString, Object.class);
                     objects.add(object);
                 }
-                
+
                 fr.close();
-            
+
             }
-        }catch(Exception e){
-            System.out.println("archivo no encontrado");}
-        
+        } catch (Exception e) {
+            System.out.println("archivo no encontrado");
+        }
+
         return objects;
-        
+
     }
-    
-    public  void addToFile(Object object) {
+
+    public void addToFile(Object object) {
         JsonArray jArray = new JsonArray();
         String jsonStringFile;
-         try
-        {
-        
-            File f=new File(object.getClass().getSimpleName()+".json");
+        try {
+
+            File f = new File(object.getClass().getSimpleName() + ".json");
             FileWriter fw;
             BufferedWriter bw;
-            
-            
-            if(f.exists()){
+
+            if (f.exists()) {
                 ArrayList<Object> objects = readObjects(object.getClass().getSimpleName());
                 objects.add(object);
                 for (int i = 0; i < objects.size(); i++) {
                     String jsonString = gson.toJson(objects.get(i));
                     JsonElement jElement = gson.fromJson(jsonString, JsonElement.class);
                     jArray.add(jElement);
-                    
+
                 }
                 jsonStringFile = gson.toJson(jArray);
-                fw=new FileWriter(f,false);
-                
-            }else{
+                fw = new FileWriter(f, false);
+
+            } else {
                 String jsonString = gson.toJson(object);
                 JsonElement jElement = gson.fromJson(jsonString, JsonElement.class);
                 jArray.add(jElement);
                 jsonStringFile = gson.toJson(jArray);
-                fw=new FileWriter(f,true);
+                fw = new FileWriter(f, true);
             }
-            
-            bw=new BufferedWriter(fw);
+
+            bw = new BufferedWriter(fw);
             bw.write(jsonStringFile);
             bw.flush();
             bw.close();
-            
-        }catch(IOException e){
-            
+
+        } catch (IOException e) {
+
         }
     }
-    
+
 }
